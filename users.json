@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "email": "joebloggs@gmail.com",
+    "firstname": "Joe",
+    "lastname": "Bloggs",
+    "pwd": "$2y$08$alTap0IsDWpRLUIUA2Sgdure8DL9nvejVf7CpU5.nQIlcdhAOB8n6"
+  },
+  {
+    "id": "2",
+    "email": "jimbloggs@gmail.com",
+    "firstname": "Jim",
+    "lastname": "Bloggs",
+    "pwd": "$2y$08$QDqqVCGWTPp4UCh5OWReDOM.NMv1UHXmK1OnaxegmHmoalP3zYwSS"
+  }
+]
