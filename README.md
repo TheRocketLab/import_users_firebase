@@ -1,5 +1,7 @@
 # Bulk import users to Firebase
 
+This repo assumes that your passwords are encryped using `BCRYPT`. If you are using a different encryption please refer to the firebase docs https://firebase.google.com/docs/auth/admin/import-users
+
 ## Steps to run
 
 1. Run `npm i` in terminal
