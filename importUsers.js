@@ -1,6 +1,6 @@
 require('dotenv').config()
-const firebaseAdmin = require('firebase-admin')
 const fs = require('fs')
+const firebaseAdmin = require('firebase-admin')
 
 
 const FIREBASE_PRIVATE_KEY = process.env.FIREBASE_PRIVATE_KEY
