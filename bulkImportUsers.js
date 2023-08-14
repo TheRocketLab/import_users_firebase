@@ -17,20 +17,9 @@ if (!firebaseAdmin.apps.length) {
 
 // Collection name you are going to import into
 const FIREBASE_COLLECTION = 'users'
-
 // Read user data from JSON file
 const userData = fs.readFileSync('users.json', 'utf-8');
 const users = JSON.parse(userData);
-
-// Generate an object with the correct format for importing into Firebase 
-const mapUsers = users.map((user) => {
-  return {
-    uid: user.id,
-    email: user.email,
-    passwordHash: Buffer.from(user.pwd),
-  };
-});
-
 const firestore = firebaseAdmin.firestore()
 
 users.map((user) => {
@@ -47,6 +36,15 @@ users.map((user) => {
   }).catch((error) => {
     console.error('Error writing document: ', error);
   });
+});
+
+// Generate an object with the correct format for importing into Firebase 
+const mapUsers = users.map((user) => {
+  return {
+    uid: user.id,
+    email: user.email,
+    passwordHash: Buffer.from(user.pwd),
+  };
 });
 
 firebaseAdmin.auth().importUsers(
